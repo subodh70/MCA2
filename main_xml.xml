@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Enter Date (DD/MM)"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Year"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/fetchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yearEditText"
+        android:layout_marginTop="16dp"
+        android:text="Fetch Weather"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fetchButton"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
